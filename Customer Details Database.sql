@@ -16,7 +16,13 @@
  (1, "Alfreds Futterkiste", "Obere Str. 57", "Berlin", "12209", "Germany"),
  (2, "Ana Trujillo", "Avda. de la Constitución 2222", "México D.F.", "05021", "Mexico"),
  (3, "Antonio Moreno Taquería", "2312", "México D.F.", "05023", "Mexico"),
- (4, "Thomas Hardy", "120 Hanover Sq.", "London, WA1", "1DP", "UK"),
+ (4, "Thomas Hardy", "120 Hanover Sstudentq.", "London, WA1", "1DP", "UK"),
  (5, "Berglunds snabbköp", "Berguvsvägen 8", "Luleå", "95822", "Sweden");
+ 
+CREATE table Customerpurchase (
+ firstname varchar (10),
+ purchaseValue INT DEFAULT 2500);
+ INSERT INTO Customerpurchase (firstname) VALUES ("Sumeer");
+ 
  
  SELECT * FROM Customerinfo
