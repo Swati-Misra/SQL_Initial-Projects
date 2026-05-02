@@ -26,6 +26,7 @@ SELECT *
 FROM student 
 WHERE marks NOT BETWEEN 500 AND 600;
 
-SELECT *
-FROM student 
-WHERE marks NOT BETWEEN 500 AND 600 LIMIT 2;
+SELECT city, AVG (marks)
+FROM student
+GROUP BY city
+ORDER BY city;
