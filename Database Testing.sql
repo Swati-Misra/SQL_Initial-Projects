@@ -18,4 +18,14 @@ VALUES
 (17, "Vikky", 250, "C", "Kolkata");
 
 SELECT studentName, marks FROM student;
-SELECT * FROM student WHERE city= "Kolkata";
+SELECT *
+FROM student 
+WHERE marks BETWEEN 500 AND 600;
+
+SELECT *
+FROM student 
+WHERE marks NOT BETWEEN 500 AND 600;
+
+SELECT *
+FROM student 
+WHERE marks NOT BETWEEN 500 AND 600 LIMIT 2;
